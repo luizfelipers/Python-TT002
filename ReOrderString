@@ -1,0 +1,16 @@
+def frase_maluca_doida(fraseNormal):
+  
+  if type(fraseNormal) == str:
+    fraseSeparada = fraseNormal.split()
+    fraseJunta = fraseSeparada[::-1]
+    str(fraseJunta)
+    return ' '.join(fraseJunta)
+  
+  else:
+    print("Não é uma string")
+
+frasedoida = frase_maluca_doida('Socorram-me subi num ônibus em Marrocos')
+print(frasedoida)
+
+novaFrase = frase_maluca_doida(input('Digite uma frase para inverter a ordem das palavras.'))
+print(novaFrase)
